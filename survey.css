@@ -1,0 +1,94 @@
+
+
+/*---------------------------------*\
+   Base
+\*---------------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px 10px;
+  color: #293135;
+  font: 16px/1.25 "Helvetica", "Hiragino Sans GB", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.wrap {
+  max-width: 640px; }
+
+h3 {
+  margin-top: 2.5em; }
+
+/*---------------------------------*\
+   Entries
+\*---------------------------------*/
+.content {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  border-radius: 3px;
+  overflow: hidden; }
+  .content > input {
+    display: none; }
+    .content > input:checked + label {
+      color: rgba(255, 255, 255, 0.85);
+      background: #2680dc; }
+      .content > input:checked + label:after {
+        content: "✓";
+        color: rgba(255, 255, 255, 0.85);
+        background: #1d67b2; }
+  .content > label {
+    position: relative;
+    display: block;
+    padding: 12px 10px 8px 10px;
+    color: #555;
+    line-height: 20px;
+    background: #e7eef6;
+    cursor: pointer; }
+    .content > label:after {
+      content: "O";
+      position: absolute;
+      top: 0;
+      left: -40px;
+      bottom: 0;
+      width: 40px;
+      padding: 12px 10px 8px 10px;
+      color: rgba(0, 0, 0, 0.15);
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      background: #d1dbe7; }
+
+/*---------------------------------*\
+   Buttons
+\*---------------------------------*/
+.div_bt {
+  max-width: 320px;
+  padding-top: 30px; }
+  .div_bt:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.btn {
+  float: left;
+  width: 48%;
+  padding: 12px 10px 8px 10px;
+  color: #555;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  background: e7eef6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+  .btn:first-of-type {
+    margin-right: 4%; }
+
+#ok {
+  color: #fff;
+  background: #267bea; }
